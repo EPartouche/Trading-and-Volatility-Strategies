@@ -5,8 +5,8 @@ You can find below the strategies choosen:
 
 ## APPLE Stocks - Strap Delta Hedged 
 
-# Rationale
-# High implied volatility scenario, with a directional bias to the upside
+### Rationale
+### High implied volatility scenario, with a directional bias to the upside
 Main reason: Event-driven catalyst: Upcoming product launches or earnings (Apple’s earnings typically move the stock significantly).
 -> Main event: 9 or 10 september 2025-> Expected launches: iPhone 17 with upgraded processor and camera, Apple Watch Series 11, Ultra 3, SE refresh, iPad Pro with M5 chip, and public release of iOS 19 (likely around September 15). 
 
@@ -16,7 +16,7 @@ Main reason: Event-driven catalyst: Upcoming product launches or earnings (Apple
 4- Clean chart structure: Technically coiled price range in past weeks – ripe for breakout in either direction.
 5- Strategy Goal: Profit from significant price move in either direction, regardless of direction.
 
-# Delta Hedging
+### Delta Hedging
 
 14/04 : The net delta is –0.028, meaning the portfolio is nearly delta-neutral, with only a minimal exposure: it would lose $0.028 if Apple’s stock rises by $1. A new delta adjustement will be realised in june 2025.
 
