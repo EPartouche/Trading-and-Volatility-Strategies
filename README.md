@@ -76,3 +76,70 @@ Main reason: The Bank of Japan maintains ultra-loose monetary policy, while the 
 4- Defined risk-reward: The long call spread caps both potential loss and gain, suitable for a controlled bullish view.
 5- Low volatility cost structure: Implied vol (~9–10%) is relatively low for this FX pair, making spreads attractive.
 6- Event alignment: Major central bank meetings and macro releases within maturity window may trigger movement into profit zone.
+
+
+# Coding analysis
+
+## First Event - Apple Strap Hedging
+Python code used to analyse Apple stock by computing daily log returns, realised volatility (daily, period and annualised) and total return over a defined time window. The analysis provides a quantitative measure of risk and performance, useful for comparing realised volatility with option-implied volatility and assessing directional versus volatility-driven strategies.
+
+[*********************100%***********************]  1 of 1 completedDaily volatility (σ):            2.1466%
+Volatility over period:          10.7328%
+Annualised volatility (σ·√252):  34.0755%
+Total return over the period:    2.28%
+
+<img width="1863" height="1254" alt="image" src="https://github.com/user-attachments/assets/d4542714-80be-425c-8ab2-94dacda44751" />
+
+<img width="968" height="650" alt="image" src="https://github.com/user-attachments/assets/bf839cd0-c8a2-403a-8d8f-5bfc425970c2" />
+<img width="912" height="648" alt="image" src="https://github.com/user-attachments/assets/f9b201fb-e5cc-46b6-a1a6-6e3ee01dc3e1" />
+
+Estimated number of option contracts:  1.48
+Total delta exposure from options:     20.76 shares
+To delta hedge, you should short:      21 shares of the stock
+
+## FX analysis - AUD/JPY Call Spread (with carry and directional strategy)
+Python code used to analyse the AUD/JPY exchange rate by computing daily log returns, realised volatility (daily, period and annualised) and total return over a defined horizon. This analysis quantifies FX risk and performance, enabling comparison with option-implied volatility and supporting directional, carry or volatility-based FX option strategies.
+
+[*********************100%***********************]  1 of 1 completedDaily volatility (σ):            0.6575%
+Volatility over period:          3.2212%
+Annualised volatility (σ·√252):  10.4379%
+Total return over the period:    3.37%
+
+Secondly, the AUD/JPY exchange rate analysis by computing daily log returns and a 10-day rolling annualised volatility. The exchange rate and realised volatility are plotted together to visualise the relationship between price movements and changing FX risk over time, supporting volatility-based and option trading analysis.
+
+<img width="1847" height="897" alt="image" src="https://github.com/user-attachments/assets/3405b2c1-c103-404d-87b1-ca0c9bff892c" />
+
+## Phenix analysis - Global view on 21/05/2025
+Analysis providing a clear overview of risk and performance across multiple equities (AAPL, TSLA, MSFT, XOM) by estimating daily log returns, realised volatility at different horizons, and total returns over the same period. This allows direct comparison of market behaviour across stocks and supports relative value and option strategy assessment.
+
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed
+[*********************100%***********************]  1 of 1 completed--- AAPL ---
+Daily volatility (σ):            2.1466%
+Volatility over period:          10.7328%
+Annualised volatility (σ·√252):  34.0755%
+Total return over the period:    2.28%
+
+--- TSLA ---
+Daily volatility (σ):            3.6823%
+Volatility over period:          18.4117%
+Annualised volatility (σ·√252):  58.4553%
+Total return over the period:    36.25%
+
+--- MSFT ---
+Daily volatility (σ):            2.0438%
+Volatility over period:          10.2192%
+Annualised volatility (σ·√252):  32.4449%
+Total return over the period:    18.36%
+
+--- XOM ---
+Daily volatility (σ):            1.4288%
+Volatility over period:          7.1438%
+Annualised volatility (σ·√252):  22.6810%
+Total return over the period:    2.44%
+
+Overview comparing four equities (AAPL, TSLA, MSFT, XOM) over the same time window by plotting both their closing prices and their 10-day rolling annualised realised volatility was done. This dual-axis visual highlights how price trends and risk evolve together across stocks, enabling quick cross-name comparison for relative value and option/volatility strategy selection.
+
+****<img width="1646" height="823" alt="image" src="https://github.com/user-attachments/assets/77f44de0-361b-448e-812a-acd4244961e7" />
+
